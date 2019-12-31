@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\..\common.props"></Import>
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <AssemblyName>tgtDemo.Application</AssemblyName>
+    <PackageId>tgtDemo.Application</PackageId>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+    <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RootNamespace>tgtDemo</RootNamespace>
+    <LangVersion>7.2</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="EPPlus" Version="4.5.3.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\tgtDemo.Application.Shared\tgtDemo.Application.Shared.csproj" />
+    <ProjectReference Include="..\tgtDemo.Core\tgtDemo.Core.csproj" />
+    <ProjectReference Include="..\tgtDemo.EntityFrameworkCore\tgtDemo.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Transactions" />
+  </ItemGroup>
+</Project>
