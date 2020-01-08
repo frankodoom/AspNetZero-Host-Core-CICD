@@ -6,12 +6,12 @@ steps:
   displayName: Restore
   inputs:
     command: restore
-    projects: ' **/Prism.Web.Host.csproj'
+    projects: ' **/tgtDemo.Web.Host.csproj'
 
 - task: DotNetCoreCLI@2
   displayName: Build
   inputs:
-    projects: ' **/Prism.Web.Host.csproj'
+    projects: ' **/tgtDemo.Web.Host.csproj'
     arguments: '--configuration $(BuildConfiguration)'
 
 
