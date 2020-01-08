@@ -1,5 +1,8 @@
+trigger:
+- master
+
 pool:
-  name: Hosted Ubuntu 1604
+  vmImage: 'ubuntu-latest'
 
 steps:
 - task: DotNetCoreCLI@2
