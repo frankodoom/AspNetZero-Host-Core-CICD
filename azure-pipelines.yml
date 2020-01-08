@@ -1,6 +1,9 @@
 trigger:
 - master
 
+variables:
+  buildConfiguration: 'Release'
+
 pool:
   vmImage: 'ubuntu-latest'
 
@@ -15,7 +18,7 @@ steps:
   displayName: Build
   inputs:
     command: build
-    projects: ' **/*.Host.csproj'
+    projects: ' **/tgtDemo.Web.Host.csproj'
     arguments: '--configuration $(BuildConfiguration)'
 
 - task: DotNetCoreCLI@2
