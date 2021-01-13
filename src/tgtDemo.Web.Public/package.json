@@ -15,7 +15,7 @@
     "json2": "*",
     "moment": "^2.20.1",
     "moment-timezone": "^0.5.14",
-    "jquery-validation": "^1.15.1",
+    "jquery-validation": "^1.19.3",
     "block-ui": "^2.70.1",
     "spin.js": "^2.3.2",
     "underscore": "^1.8.3",
