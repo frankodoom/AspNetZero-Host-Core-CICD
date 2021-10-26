@@ -33,7 +33,7 @@
     "signalr": "^2.2.1",
     "jquery-sparkline": "^2.4.0",
     "mustache": "^3.0.1",
-    "jquery-ui": "^1.12.0",
+    "jquery-ui": "^1.13.0",
     "abp-web-resources": "^3.3.0",
     "js-cookie": "^2.1.3",
     "tether": "^1.4.5",
